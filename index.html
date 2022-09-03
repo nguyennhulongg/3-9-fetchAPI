@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	
+</body>
+<script>
+const endpoint = 'https://630e1552109c16b9abf442db.mockapi.io/long-project/friends'
+
+const friends = [];
+fetch(endpoint)
+.then(blob => blob.json())
+.then(data => friends.push(...data));
+
+console.log(friends);
+
+</script>
+</html>
